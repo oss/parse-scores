@@ -1,5 +1,4 @@
 import re
-
 read = open(raw_input("Enter your file: "))
 e1 = re.compile(r"\[(.+)\]")
 e2 = re.compile(r"(.+)=(.+),|(.+)=(.+)\Z")
@@ -27,5 +26,3 @@ for line in read:
 	net = round(net, 4)
 	total = round(total, 4)
 	print(total, net)
-	
-		
